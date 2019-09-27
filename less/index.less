@@ -1,4 +1,3 @@
-// Is this working?
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -48,12 +47,103 @@ table {
 	border-spacing: 0;
 }
 
+/*       VARIABLES     */
+
+@italics: italic;
+@font-one: 20px;
+@font-two: 18px;
+@color: #DFD1AA;
+@border: 1px solid #333;
+
+
+/*   MIXINS  */
+.link {
+  text-decoration: none;
+  color: #666;
+}
+
 /* Set every element's box-sizing to border-box */
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+html {
+  height: 100vh;
 }
 
+body {
+  background-image: url("../img/klaus-with-lambda-school-stress-computer.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: @color;
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+
+  /*     Scrollbar styling  -- does not work on Firefox, Internet Explorer, or Edge  */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: @color;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #000;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #BDBDBD;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(223, 209, 170, .75);
+    width: 85%;
+    min-height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 2%;
+  
+
+    header {
+      line-height: 1.5;
+      padding-bottom: 2%;
+
+    }
+
+      h1 {
+        font-size: @font-one;
+      }
+
+      h2 {
+        font-size: @font-two;
+      }
+
+      .quote {
+        padding: 1%;
+        text-align: center;
+        border-top: @border;
+        border-bottom: @border;
+        font-style: @italics;
+      }
+
+  .content {
+    a {
+      .link();
+    }
+  }
+    .project {
+      display: column;
+
+
+  }
+}  /*    end of container class   */
+
+}  /*    end of body     */
+/*     Mobile Size   */
+/*    Tablet Size    */
+/*    Desktop Size    */

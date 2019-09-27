@@ -1,1 +1,202 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*       VARIABLES     */
+/*   MIXINS  */
+.link {
+  text-decoration: none;
+  color: #666;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+}
+body {
+  background-image: url("../img/klaus-with-lambda-school-stress-computer.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #DFD1AA;
+  font-family: "Lora", sans-serif;
+  font-size: 16px;
+  /*     Scrollbar styling  -- does not work on Firefox, Internet Explorer, or Edge  */
+  /*    end of container class   */
+}
+body ::-webkit-scrollbar {
+  width: 5px;
+}
+body ::-webkit-scrollbar-track {
+  background: #DFD1AA;
+}
+body ::-webkit-scrollbar-thumb {
+  background: #000;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #BDBDBD;
+}
+body .container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(223, 209, 170, 0.75);
+  width: 85%;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2%;
+}
+body .container header {
+  line-height: 1.5;
+  padding-bottom: 2%;
+}
+body .container h1 {
+  font-size: 20px;
+}
+body .container h2 {
+  font-size: 18px;
+}
+body .container .quote {
+  padding: 1%;
+  text-align: center;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  font-style: italic;
+}
+body .container .content a {
+  text-decoration: none;
+  color: #666;
+}
+body .container .project {
+  display: column;
+}
+/*    end of body     */
+/*     Mobile Size   */
+/*    Tablet Size    */
+/*    Desktop Size    */
